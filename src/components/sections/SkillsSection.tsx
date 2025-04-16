@@ -1,0 +1,93 @@
+
+import { Card, CardContent } from "@/components/ui/card";
+import { 
+  Code, Database, Layout, Palette, PenTool, Server, Settings, Terminal 
+} from "lucide-react";
+
+const skills = [
+  {
+    category: "Frontend Development",
+    icon: <Layout className="text-primary" size={32} />,
+    items: ["HTML5", "CSS3", "JavaScript", "React", "TypeScript", "Tailwind CSS"]
+  },
+  {
+    category: "Backend Development",
+    icon: <Server className="text-primary" size={32} />,
+    items: ["Node.js", "Express", "Python", "Django", "RESTful APIs"]
+  },
+  {
+    category: "Database",
+    icon: <Database className="text-primary" size={32} />,
+    items: ["MongoDB", "PostgreSQL", "MySQL", "Firebase"]
+  },
+  {
+    category: "UI/UX Design",
+    icon: <PenTool className="text-primary" size={32} />,
+    items: ["Figma", "Adobe XD", "Wireframing", "Prototyping"]
+  },
+  {
+    category: "Dev Tools",
+    icon: <Terminal className="text-primary" size={32} />,
+    items: ["Git", "GitHub", "VS Code", "Webpack", "Docker"]
+  },
+  {
+    category: "Other Skills",
+    icon: <Settings className="text-primary" size={32} />,
+    items: ["Responsive Design", "Testing", "SEO", "Performance Optimization"]
+  },
+];
+
+const SkillCard = ({ category, icon, items }: {
+  category: string;
+  icon: React.ReactNode;
+  items: string[];
+}) => (
+  <Card className="hover-effect overflow-hidden border border-border/50">
+    <CardContent className="p-6">
+      <div className="mb-4">
+        {icon}
+      </div>
+      <h3 className="text-xl font-bold mb-3">{category}</h3>
+      <div className="flex flex-wrap gap-2">
+        {items.map((item, index) => (
+          <span 
+            key={index} 
+            className="inline-block px-3 py-1 bg-muted text-sm rounded-full"
+          >
+            {item}
+          </span>
+        ))}
+      </div>
+    </CardContent>
+  </Card>
+);
+
+const SkillsSection = () => {
+  return (
+    <section id="skills" className="section-padding">
+      <div className="container">
+        <div className="text-center max-w-2xl mx-auto mb-16">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">My Skills</h2>
+          <div className="h-1 w-20 bg-primary mx-auto mb-6"></div>
+          <p className="text-muted-foreground">
+            I've worked with a range of technologies in the web development world.
+            From frontend to backend, design to deployment.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {skills.map((skill, index) => (
+            <SkillCard 
+              key={index} 
+              category={skill.category} 
+              icon={skill.icon} 
+              items={skill.items} 
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default SkillsSection;
