@@ -10,12 +10,12 @@ const HeroSection = () => {
       <div className="container grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
         <div className="md:col-span-7 space-y-6 animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-heading font-bold leading-tight">
-            Hi, I'm <span className="text-gradient">Your Name</span><br />
-            Web Developer & Designer
+            Hi, I'm <span className="text-gradient">S. Razikur Rahman</span><br />
+            Electronics & Communication Engineer
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
-            I create beautiful, responsive, and user-friendly websites and applications that deliver exceptional user experiences.
+            Cybersecurity Enthusiast | Pentester | Aspiring Information Security Engineer focused on threat analysis, penetration testing, and secure system development.
           </p>
           
           <div className="flex flex-wrap gap-4">
@@ -31,7 +31,7 @@ const HeroSection = () => {
           
           <div className="flex items-center gap-4 pt-2">
             <a 
-              href="https://github.com" 
+              href="https://github.com/rrazik487" 
               target="_blank" 
               rel="noreferrer" 
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -40,7 +40,7 @@ const HeroSection = () => {
               <Github size={20} />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/s-razikur-rahman-304415235" 
               target="_blank" 
               rel="noreferrer" 
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -49,7 +49,7 @@ const HeroSection = () => {
               <Linkedin size={20} />
             </a>
             <a 
-              href="mailto:your.email@example.com" 
+              href="mailto:rrazik487@gmail.com" 
               className="text-muted-foreground hover:text-primary transition-colors"
               aria-label="Email"
             >
@@ -60,19 +60,18 @@ const HeroSection = () => {
         
         <div className="md:col-span-5 animate-slide-in-right">
           <div className="relative">
-            {/* Replace with your own image */}
             <div className="w-full aspect-square rounded-full bg-gradient-to-tr from-blue-500 to-purple-500 opacity-90 flex items-center justify-center">
               <div className="w-[95%] h-[95%] rounded-full bg-white flex items-center justify-center">
-                <span className="text-2xl font-bold">Your Image Here</span>
+                <span className="text-2xl font-bold">SR</span>
               </div>
             </div>
             
             <div className="absolute top-8 -right-4 bg-white dark:bg-slate-800 p-4 rounded-lg shadow-lg">
-              <p className="font-medium">3+ Years Experience</p>
+              <p className="font-medium">Cybersecurity Enthusiast</p>
             </div>
             
             <div className="absolute -bottom-4 -left-4 bg-white dark:bg-slate-800 p-4 rounded-lg shadow-lg">
-              <p className="font-medium">20+ Projects Completed</p>
+              <p className="font-medium">Pentester</p>
             </div>
           </div>
         </div>

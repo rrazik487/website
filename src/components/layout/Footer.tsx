@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,9 +9,9 @@ const Footer = () => {
       <div className="container py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-lg font-bold mb-4">Portfolio</h3>
+            <h3 className="text-lg font-bold mb-4">S. Razikur Rahman</h3>
             <p className="text-muted-foreground max-w-xs">
-              A showcase of my work, skills, and achievements in web development and design.
+              A showcase of my work, skills, and achievements in electronics, communication engineering, and cybersecurity.
             </p>
           </div>
 
@@ -20,6 +20,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="#home" className="text-muted-foreground hover:text-primary transition-colors">Home</a></li>
               <li><a href="#about" className="text-muted-foreground hover:text-primary transition-colors">About</a></li>
+              <li><a href="#skills" className="text-muted-foreground hover:text-primary transition-colors">Skills</a></li>
               <li><a href="#projects" className="text-muted-foreground hover:text-primary transition-colors">Projects</a></li>
               <li><a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">Contact</a></li>
             </ul>
@@ -28,19 +29,15 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Connect</h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://github.com/rrazik487" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Github size={20} />
                 <span className="sr-only">GitHub</span>
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/in/s-razikur-rahman-304415235" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin size={20} />
                 <span className="sr-only">LinkedIn</span>
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Twitter size={20} />
-                <span className="sr-only">Twitter</span>
-              </a>
-              <a href="mailto:your.email@example.com" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="mailto:rrazik487@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
                 <Mail size={20} />
                 <span className="sr-only">Email</span>
               </a>
@@ -49,7 +46,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-8 pt-6 border-t text-center text-muted-foreground">
-          <p>&copy; {currentYear} Your Name. All rights reserved.</p>
+          <p>&copy; {currentYear} S. Razikur Rahman. All rights reserved.</p>
         </div>
       </div>
     </footer>

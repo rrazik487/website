@@ -2,47 +2,73 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Shield, Navigation, Cpu, Activity, Car } from "lucide-react";
 
 const projects = [
   {
-    title: "Project 1",
-    description: "A description of your first project. Explain what it does, the technologies used, and any challenges you overcame.",
+    title: "Penetration Testing on IoT Devices",
+    description: "Performed comprehensive security assessments on embedded networks and IoT devices, identifying vulnerabilities and providing remediation strategies.",
     image: "bg-gradient-to-br from-blue-400 to-indigo-600",
-    tags: ["React", "TypeScript", "Tailwind CSS"],
-    demoLink: "https://example.com",
-    repoLink: "https://github.com"
+    icon: <Shield className="text-white text-4xl" />,
+    tags: ["Penetration Testing", "IoT Security", "Vulnerability Assessment"],
+    demoLink: "#",
+    repoLink: "https://github.com/rrazik487"
   },
   {
-    title: "Project 2",
-    description: "A description of your second project. Make it concise but informative to give viewers a clear idea of your work.",
+    title: "NavIC Sentinel",
+    description: "Built a secure NavIC GPS tracking system with alert-based features, enabling real-time location monitoring with enhanced security protocols.",
     image: "bg-gradient-to-br from-emerald-400 to-cyan-600",
-    tags: ["Node.js", "Express", "MongoDB"],
-    demoLink: "https://example.com",
-    repoLink: "https://github.com"
+    icon: <Navigation className="text-white text-4xl" />,
+    tags: ["GPS Tracking", "NavIC", "Embedded Systems", "Security"],
+    demoLink: "#",
+    repoLink: "https://github.com/rrazik487"
   },
   {
-    title: "Project 3",
-    description: "A description of your third project. Highlight the most impressive aspects of the project that showcase your skills.",
+    title: "Smart Yoga Mat with AI & IoT",
+    description: "Developed a real-time posture correction system using Raspberry Pi, ESP32, and machine learning models to analyze and provide feedback on yoga poses.",
     image: "bg-gradient-to-br from-amber-400 to-orange-600",
-    tags: ["React Native", "Firebase", "Redux"],
-    demoLink: "https://example.com",
-    repoLink: "https://github.com"
+    icon: <Cpu className="text-white text-4xl" />,
+    tags: ["Raspberry Pi", "ESP32", "ML", "IoT", "Real-time"],
+    demoLink: "#",
+    repoLink: "https://github.com/rrazik487"
   },
   {
-    title: "Project 4",
-    description: "A description of your fourth project. Focus on your role in the project if it was a collaborative effort.",
+    title: "Yoga Pose Detection Model",
+    description: "Trained an EfficientNetB3 model to accurately classify 107+ yoga postures with over 90% accuracy, enabling real-time pose detection and correction.",
     image: "bg-gradient-to-br from-pink-400 to-rose-600",
-    tags: ["Vue.js", "Vuex", "SCSS"],
-    demoLink: "https://example.com",
-    repoLink: "https://github.com"
+    icon: <Activity className="text-white text-4xl" />,
+    tags: ["TensorFlow", "Computer Vision", "ML", "EfficientNetB3"],
+    demoLink: "#",
+    repoLink: "https://github.com/rrazik487"
   },
+  {
+    title: "Smart Parking System",
+    description: "Built a PIC18F452-based embedded system for vehicle detection and parking management, creating an efficient solution for urban parking challenges.",
+    image: "bg-gradient-to-br from-purple-400 to-indigo-600",
+    icon: <Car className="text-white text-4xl" />,
+    tags: ["PIC18F452", "Embedded Systems", "IoT", "Smart City"],
+    demoLink: "#",
+    repoLink: "https://github.com/rrazik487"
+  },
+  {
+    title: "Reverse Engineering & Exploit Development",
+    description: "Used Ghidra to analyze software, identified and exploited RCE vulnerabilities, demonstrating advanced cybersecurity skills and understanding of system internals.",
+    image: "bg-gradient-to-br from-teal-400 to-green-600",
+    icon: <Shield className="text-white text-4xl" />,
+    tags: ["Reverse Engineering", "Ghidra", "Exploit Development", "RCE"],
+    demoLink: "#",
+    repoLink: "https://github.com/rrazik487"
+  }
 ];
 
 const ProjectCard = ({ project }: { project: typeof projects[0] }) => (
   <Card className="overflow-hidden hover-effect border border-border/50">
-    <div className={`aspect-video ${project.image} flex items-center justify-center text-white font-bold text-xl`}>
-      Project Screenshot
+    <div className={`aspect-video ${project.image} flex items-center justify-center text-white font-bold text-xl relative`}>
+      <div className="absolute inset-0 flex items-center justify-center">
+        {project.icon}
+      </div>
+      <div className="absolute inset-0 bg-black/30"></div>
+      <span className="relative z-10">{project.title}</span>
     </div>
     <CardContent className="p-6">
       <h3 className="text-xl font-bold mb-2">{project.title}</h3>
@@ -70,7 +96,7 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => (
         asChild
       >
         <a href={project.demoLink} target="_blank" rel="noreferrer">
-          <ExternalLink className="mr-2" size={16} /> Live Demo
+          <ExternalLink className="mr-2" size={16} /> Project Details
         </a>
       </Button>
     </CardFooter>
@@ -85,7 +111,7 @@ const ProjectsSection = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">My Projects</h2>
           <div className="h-1 w-20 bg-primary mx-auto mb-6"></div>
           <p className="text-muted-foreground">
-            Check out some of my recent work that showcases my skills and experience.
+            Check out some of my recent work that showcases my skills in cybersecurity, embedded systems, and machine learning.
           </p>
         </div>
 
@@ -97,7 +123,7 @@ const ProjectsSection = () => {
         
         <div className="text-center mt-12">
           <Button size="lg" asChild>
-            <a href="https://github.com" target="_blank" rel="noreferrer">
+            <a href="https://github.com/rrazik487" target="_blank" rel="noreferrer">
               <Github className="mr-2" size={18} /> See More on GitHub
             </a>
           </Button>

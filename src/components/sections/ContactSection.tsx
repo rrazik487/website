@@ -50,7 +50,7 @@ const ContactSection = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Get In Touch</h2>
           <div className="h-1 w-20 bg-primary mx-auto mb-6"></div>
           <p className="text-muted-foreground">
-            Have a question or want to work together? Feel free to reach out to me!
+            Have a question about cybersecurity or want to discuss potential collaboration? Feel free to reach out!
           </p>
         </div>
 
@@ -64,7 +64,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-1">Location</h3>
-                    <p className="text-muted-foreground">Your City, Your Country</p>
+                    <p className="text-muted-foreground">Bengaluru, India</p>
                   </div>
                 </div>
                 
@@ -75,10 +75,10 @@ const ContactSection = () => {
                   <div>
                     <h3 className="font-bold text-lg mb-1">Email</h3>
                     <a 
-                      href="mailto:your.email@example.com" 
+                      href="mailto:rrazik487@gmail.com" 
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      your.email@example.com
+                      rrazik487@gmail.com
                     </a>
                   </div>
                 </div>
@@ -90,10 +90,10 @@ const ContactSection = () => {
                   <div>
                     <h3 className="font-bold text-lg mb-1">Phone</h3>
                     <a 
-                      href="tel:+1234567890" 
+                      href="tel:6382308661" 
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      +1 (234) 567-890
+                      6382308661
                     </a>
                   </div>
                 </div>

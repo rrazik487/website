@@ -1,39 +1,39 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { 
-  Code, Database, Layout, Palette, PenTool, Server, Settings, Terminal 
+  Code, Database, Layout, Shield, Terminal, Server, Monitor, Cpu 
 } from "lucide-react";
 
 const skills = [
   {
-    category: "Frontend Development",
-    icon: <Layout className="text-primary" size={32} />,
-    items: ["HTML5", "CSS3", "JavaScript", "React", "TypeScript", "Tailwind CSS"]
+    category: "Security Tools & Frameworks",
+    icon: <Shield className="text-primary" size={32} />,
+    items: ["Burp Suite", "Metasploit", "Wireshark", "Nmap", "Ghidra", "OWASP ZAP"]
   },
   {
-    category: "Backend Development",
-    icon: <Server className="text-primary" size={32} />,
-    items: ["Node.js", "Express", "Python", "Django", "RESTful APIs"]
+    category: "Languages & Development",
+    icon: <Code className="text-primary" size={32} />,
+    items: ["Python", "C", "Bash", "Verilog", "HTML/CSS/JS"]
   },
   {
-    category: "Database",
-    icon: <Database className="text-primary" size={32} />,
-    items: ["MongoDB", "PostgreSQL", "MySQL", "Firebase"]
-  },
-  {
-    category: "UI/UX Design",
-    icon: <PenTool className="text-primary" size={32} />,
-    items: ["Figma", "Adobe XD", "Wireframing", "Prototyping"]
-  },
-  {
-    category: "Dev Tools",
+    category: "Cybersecurity Domains",
     icon: <Terminal className="text-primary" size={32} />,
-    items: ["Git", "GitHub", "VS Code", "Webpack", "Docker"]
+    items: ["Penetration Testing", "Digital Forensics", "Threat Modeling", "Vulnerability Assessment", "Incident Response"]
   },
   {
-    category: "Other Skills",
-    icon: <Settings className="text-primary" size={32} />,
-    items: ["Responsive Design", "Testing", "SEO", "Performance Optimization"]
+    category: "OS & Platforms",
+    icon: <Monitor className="text-primary" size={32} />,
+    items: ["Linux", "Windows", "Kali Linux", "macOS", "iOS"]
+  },
+  {
+    category: "ML & Data Frameworks",
+    icon: <Cpu className="text-primary" size={32} />,
+    items: ["TensorFlow", "OpenCV", "NumPy"]
+  },
+  {
+    category: "Certifications",
+    icon: <Server className="text-primary" size={32} />,
+    items: ["Cybersecurity Analyst Simulation", "Ethical Hacking Series", "LinkedIn (Jan 2024)", "Foundations of Cybersecurity", "Cyber Security & Applied Ethical Hacking", "VLSI SoC Design using Verilog HDL"]
   },
 ];
 
@@ -70,8 +70,8 @@ const SkillsSection = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">My Skills</h2>
           <div className="h-1 w-20 bg-primary mx-auto mb-6"></div>
           <p className="text-muted-foreground">
-            I've worked with a range of technologies in the web development world.
-            From frontend to backend, design to deployment.
+            I've worked with a range of technologies in the cybersecurity and electronics engineering world.
+            From penetration testing to digital forensics, embedded systems to machine learning.
           </p>
         </div>
 
