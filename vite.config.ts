@@ -4,15 +4,15 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  base: '/',
-  plugins: [react()],
-})
-
+export default defineConfig(({ mode }) => ({
+  base: "/", // ✅ Important for GitHub Pages + custom domain like razik.live
+  server: {
+    host: "::",
+    port: 8080,
+  },
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
+    mode === "development" && componentTagger(),
   ].filter(Boolean),
   resolve: {
     alias: {
