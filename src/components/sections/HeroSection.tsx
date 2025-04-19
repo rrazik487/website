@@ -62,7 +62,7 @@ const HeroSection = () => {
           <div className="relative">
             <div className="w-full aspect-square rounded-full bg-gradient-to-tr from-blue-500 to-purple-500 opacity-90 flex items-center justify-center">
               <div className="w-[95%] h-[95%] rounded-full bg-white flex items-center justify-center">
-                <span className="text-2xl font-bold">SR</span>
+                <span className="text-2xl font-bold"></span>
               </div>
             </div>
             
